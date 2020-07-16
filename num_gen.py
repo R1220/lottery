@@ -1,5 +1,5 @@
 import random
 
-def generator():
-    number = random.randint(1, 35)
+def generator(x,y):
+    number = random.randint(x, y)
     return number
