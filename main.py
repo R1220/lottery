@@ -1,8 +1,7 @@
-from num_gen import generator
+from draw_ball import ball
 
 def main():
-    num = generator(1, 35)
-    print (num)
+    print (ball(5))
 
 if __name__ == '__main__':
     main()
