@@ -4,15 +4,11 @@ from collections import Counter
 def rules():
     list = ball(5)
     count = Counter(list)
+    for i in list:
+        if list.count(i) > 2:  ## is not the array address but the item! WRONG!
+            list.pop(i)
+        new_list_len = len(list)
+        if new_list_len < 5:
+         list.append(ball(5 - new_list_len))
 
-    return list, count
-
-
-
-
-
-## Rules allow duplicate numbers but not if more than 2.
-## 3 equal numbers not allowed
-## 1,2,3,4,5 OK
-## 1,1,2,2,5 OK
-## 1,1,1,2,3 NO OK
+    return list
