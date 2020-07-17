@@ -1,7 +1,7 @@
-from draw_ball import ball
+from rules import rules
 
 def main():
-    print (ball(5))
+    print (rules())
 
 if __name__ == '__main__':
     main()
