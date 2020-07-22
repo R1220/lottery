@@ -9,6 +9,6 @@ def rules():
         o = ('%s %7d' % (letter, count))
         if count > 2:
             list.remove(letter)
-            list.extend(substitute(1, 35, letter))
+            list.extend(substitute(1, 4, letter))
 
     return list
