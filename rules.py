@@ -1,6 +1,7 @@
 from num_gen import substitute
 from collections import Counter
 
+
 def rules(list):
     repeat = Counter(list)
     for letter, count in repeat.most_common():
