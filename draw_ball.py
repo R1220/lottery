@@ -6,5 +6,4 @@ def ball(n):
     while len(numbers) < n:
         gen = generator(1, 35)
         numbers.append(gen)
-
     return numbers
