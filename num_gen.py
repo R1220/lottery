@@ -5,7 +5,7 @@ def generator(x,y):
     return number
 def substitute(x,y,exclude):
     numbers = list(range(x, y))
-    numbers = numbers.remove(exclude)
+    numbers.remove(exclude)
     number = random.choice(numbers)
 
     return number
